@@ -1,7 +1,29 @@
 
-body{
+body.main {
 	background-color: black;
 	transform-style: preserve-3d;
+}
+
+
+
+body.t21{
+	background-color: rgb(232, 223, 210);
+	transform-style: preserve-3d;
+	background-size: cover;
+	font-family: sans-serif;
+	background-repeat:initial;
+	background-attachment: fixed;
+
+}
+body.nw {
+	background-color: rgb(232, 223, 210);
+	transform-style: preserve-3d;
+	background-size: cover;
+	color: rgb(232, 223, 210);
+	font-family: sans-serif;
+	background-repeat:initial;
+	background-attachment: fixed;
+
 }
 .golova{
 	position: sticky;
@@ -159,6 +181,13 @@ body{
 
 }
 
+h1 {
+	color: rgb(232, 223, 210);
+	font-family: sans-serif;
+
+}
 
 
-
+video{
+	padding: 50px;
+}
