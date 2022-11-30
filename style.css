@@ -1,10 +1,33 @@
-header{
-	background-image: url(media/back.jpg);
+
+body{
+	background-color: black;
+	transform-style: preserve-3d;
+}
+.golova{
+	position: sticky;
+	top: 0;
+	margin: 2em;
+	min-height: 2em;
+	backdrop-filter: blur(10px);
+	z-index: 1000;
+
 }
 .bar{
 	width:100%;
 	height: 70px;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 1.0);
+
+
+}
+.bar:before{
+	content: ;
+	display:inline-block;
+	height: 50px;
+	width: 100%;
+	color:black;
+	position: absolute;
+	left: 0;
+	z-index: -1;
 }
 .bar .containr{
 	height: inherit;
@@ -12,6 +35,13 @@ header{
 	justify-content: space-between;
 	align-items: center;
 }
+.bar li a{
+	display: inline-block;
+	color:floralwhite;
+	opacity:0.5;
+	text-decoration:none ;
+	padding: 10px;
+	transition: all .07s ease-in-out;}
 .menu{
 	list-style: none;
 	padding-left: 0;
@@ -19,25 +49,18 @@ header{
 	font-style: ;
 	font-size: 18px;
 	margin-bottom: 15px;
-
+	margin: 0;
+	padding: 0;
+	
 
 } 
 .menu li{
 	margin:20px ;
 	display: inline-block;
-	font-
 }
-.bar li a{
-	display: inline-block;
-	color:black;
-	opacity:0.5;
-	text-decoration:none ;
-	padding: 10px;
-	transition: all .07s ease-in-out;
 
-}
 .tam21:hover{
-	color: darkred;
+	color: darkcyan;
 	transition: all .07s ease-in-out;
 	transform:scale(1.2);
 }
@@ -47,11 +70,12 @@ header{
 
 }
 .tam21{
+	align-items: left;
 	margin: 50px;
 	font-weight: 700px;
 	text-decoration: none;
 	font-size: 26px;
-	color: black;
+	color: whitesmoke;
 	font-family:system-ui;
 }
 .bar li a:hover{
@@ -60,7 +84,81 @@ header{
 	transition: all .1 ease-in-out ;
 }
 .contact{
-	background-color:darkred ;
-	border-color: darkred;
+	background-color:cyan ;
+	border-color: black;
 	border-radius: 30px;
+	opacity: 0.5;
 }
+
+.bawtext{
+	font-family:monospace;
+	margin-bottom: 10%;
+	position: relative;
+	text-align: center;
+	color: antiquewhite;
+	padding-top: 300px;
+	font-size: 30px;
+	z-index: 2;
+	font-weight: 700px;
+}
+.change-photos {
+  
+	width: 80px;
+	height: 80px;
+}
+.change-photos .change-photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.change-photos .change-photo:nth-of-type(2) {
+	display: none;
+}
+.change-photos:hover .change-photo:nth-of-type(1) {
+	display: none;
+}
+.change-photos:hover .change-photo:nth-of-type(2) {
+	display: block;
+}
+.change-photos:hover {
+	cursor: pointer;
+}
+.faculty-info{
+	margin-top: 0;
+	min-height: 700px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-repeat: fixed; /* не работает? посмотреть ПОЗЖЕ */
+}
+.factext{
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-bottom:1% ;
+	position: relative;
+	text-align: center;
+	color: antiquewhite;
+	padding-top: 10%;
+	font-size: 30px;
+	z-index: 2;
+	font-weight: 700px;
+}
+.baw{
+	background-attachment: fixed;
+	margin-top: -5%;
+	overflow-x:hidden ;
+	min-height: 700px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-repeat: fixed; /* не работает? посмотреть ПОЗЖЕ */
+
+}
+.ig{
+	width: 100%;
+	height: 1080px;
+	background-color: #a9a9a9;
+
+}
+
+
+
+
